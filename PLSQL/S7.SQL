@@ -1,0 +1,7 @@
+DECLARE 
+    NUM NUMBER := &NUM;
+BEGIN
+    FOR I IN  1..NUM  LOOP
+        DBMS_OUTPUT.PUT_LINE(I*25);
+    END LOOP;
+END;

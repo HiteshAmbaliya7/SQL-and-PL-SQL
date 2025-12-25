@@ -1,0 +1,22 @@
+-- DECLARE
+--     NUM NUMBER :=&NUM;
+--     ST NUMBER :=1;
+
+-- BEGIN 
+--  WHILE ST < NUM LOOP
+--  DBMS_OUTPUT.PUT_LINE(ST);
+--  ST := ST+2;
+--  END LOOP;
+
+-- END;
+
+
+DECLARE  
+    NUM NUMBER := &NUM;
+BEGIN 
+    FOR I  IN 1..NUM LOOP
+    IF MOD(I,2)!=0 THEN 
+    DBMS_OUTPUT.PUT_LINE(I);
+    END IF;
+    END LOOP;
+END;

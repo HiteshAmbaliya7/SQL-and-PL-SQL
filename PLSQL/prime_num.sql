@@ -1,0 +1,15 @@
+DECLARE 
+    NUM NUMBER:= &NUM;
+    TEMP NUMBER :=0;
+BEGIN 
+    FOR I IN 1..NUM LOOP
+        IF MOD(NUM,2)=0 THEN 
+            TEMP := TEMP+1;
+        END IF;
+    END LOOP;
+    IF TEMP >2 THEN 
+    DBMS_OUTPUT.PUT_LINE(' NOT PRIME');
+    ELSE 
+    DBMS_OUTPUT.PUT_LINE('PRIME');
+    END IF;
+END;

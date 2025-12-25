@@ -1,0 +1,12 @@
+DECLARE 
+    NUM NUMBER := &NUM;
+    FACTO NUMBER :=1;
+
+BEGIN
+    FOR I IN 1..NUM LOOP
+        FACTO := FACTO *I;
+    END LOOP;
+    DBMS_OUTPUT.PUT_LINE(FACTO);
+
+
+END;

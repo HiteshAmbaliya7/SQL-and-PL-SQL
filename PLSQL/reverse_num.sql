@@ -1,0 +1,13 @@
+DECLARE 
+    NUM NUMBER :=&NUM;
+    REM NUMBER;
+    REV NUMBER :=0;
+
+BEGIN 
+    WHILE NUM>0 LOOP
+        REM := MOD(NUM,10);
+        REV := REV*10+REM;
+        NUM :=TRUNC(NUM/10);
+    END LOOP;
+DBMS_OUTPUT.PUT_LINE(REV);
+END;
